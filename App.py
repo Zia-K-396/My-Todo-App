@@ -11,14 +11,14 @@ def add_todo():
         todos.append(todo)
         functions.write_todos(todos)
     else:
-        print("In file")
+        st.info("Already in the list!", icon="🚨")
 
 
 
 
-st.title("ToDo App")
-st.subheader("This is my ToDo app")
-st.write("This app helps increase your productivity")
+st.title("My ToDo App")
+
+
 
 for index,todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
