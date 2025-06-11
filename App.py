@@ -6,7 +6,7 @@ if "user" not in st.session_state:
     (The username entered first time will be used throughout.\n
      Please try to include alphabets and numbers in your username)""")
     if st.button("Continue") and user:
-        st.session_state.user = user
+        st.session_state['user'] = user
         st.rerun()
     else:
         st.stop()
